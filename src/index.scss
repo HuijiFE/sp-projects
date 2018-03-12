@@ -1,0 +1,23 @@
+@import '../node_modules/normalize.css/normalize';
+html * {
+  box-sizing: border-box;
+}
+
+$background: #222;
+
+.parcel-demo {
+  background-color: #282828;
+}
+
+.title {
+  color: cyan;
+}
+
+.main {
+  color: ghostwhite;
+  background-color: $background;
+  width: 80vw;
+  min-height: 100vh;
+  padding: 32px;
+  margin: 0 auto;
+}
