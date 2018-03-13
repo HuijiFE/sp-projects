@@ -1,7 +1,7 @@
 /**
  * @author: duduluu
  */
-import { now } from '@/common/util';
+import { now, today } from '@/common/util';
 
 const main: HTMLElement | null = document.querySelector('.parcel-demo .main');
 
@@ -10,4 +10,4 @@ if (main) {
 }
 
 // tslint:disable-next-line:no-console
-console.log(now());
+console.log(`Today is ${today()}, Now is ${now()}.`);
