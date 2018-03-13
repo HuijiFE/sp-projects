@@ -9,7 +9,7 @@
 ```
 $ clone git@github.com:HuijiFE/template-parcel-ts.git /path/to/my/project
 $ cd /path/to/my/project
-$ npm i
+$ npm run frame
 ```
 
 * Development

@@ -4,6 +4,7 @@
   "description": "A template for static single page, based on parcel.js, typescript and sass.",
   "main": "index.js",
   "scripts": {
+    "frame": "yarn || npm i",
     "dev": "parcel src/index.html -p 8090 --open",
     "start": "npm run dev",
     "watch": "parcel watch src/index.html",
