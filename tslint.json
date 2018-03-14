@@ -6,6 +6,16 @@
     "prefer-const": true,
     "no-var-keyword": true,
     "no-null-keyword": true,
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration"
+    ],
+    "member-ordering": false,
+    "binary-expression-operand-order": false,
     "indent": [true, "spaces"],
     "one-line": [
       true,
@@ -15,6 +25,7 @@
       "check-whitespace"
     ],
     "quotemark": [true, "single", "avoid-escape"],
+    "trailing-comma": [true, "all"],
     "semicolon": [true, "always", "ignore-bound-class-methods"],
     "whitespace": [
       true,
@@ -46,6 +57,8 @@
     "jsdoc-format": true,
     "no-internal-module": true,
     "no-submodule-imports": false,
-    "no-implicit-dependencies": false
+    "no-implicit-dependencies": false,
+    "import-name": false,
+    "no-default-export": false
   }
 }

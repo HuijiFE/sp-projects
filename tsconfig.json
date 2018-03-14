@@ -11,7 +11,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "allowSyntheticDefaultImports": true,
+    // "allowSyntheticDefaultImports": true,
     "noEmit": true,
     "strict": true,
     "strictPropertyInitialization": false
