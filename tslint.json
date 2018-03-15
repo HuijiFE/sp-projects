@@ -16,7 +16,9 @@
     ],
     "member-ordering": false,
     "binary-expression-operand-order": false,
+    "no-increment-decrement": false,
     "indent": [true, "spaces"],
+    "align": false,
     "one-line": [
       true,
       "check-open-brace",

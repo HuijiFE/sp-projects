@@ -11,7 +11,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    // "allowSyntheticDefaultImports": true,
+    // "allowSyntheticDefaultImports": true, /* This will make some problems in parcel.js. */
     "noEmit": true,
     "strict": true,
     "strictPropertyInitialization": false
