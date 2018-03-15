@@ -11,11 +11,15 @@ if (main) {
   section.appendChild(dateTime);
   main.appendChild(section);
   setInterval(() => {
-    const timeNow: Date = new Date();
-    // tslint:disable-next-line:no-inner-html
-    dateTime.innerHTML = `${timeNow
+    const time: Date = new Date();
+    const text: string = `${time
       .toLocaleDateString('zh-CN')
       .split('/')
-      .join('-')} ${timeNow.toLocaleTimeString('zh-CN', { hour12: false })}`;
-  }, 1000);
+      .join('-')} ${time.toLocaleTimeString('zh-CN', { hour12: false })}`;
+
+    if (dateTime.innerHTML !== text) {
+      // tslint:disable-next-line:no-inner-html
+      dateTime.innerHTML = text;
+    }
+  }, 100);
 }
