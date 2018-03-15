@@ -31,19 +31,19 @@ $ npm run build
 * Only build the script file index.ts
 
 ```
-$ npm run build-ts
+$ npm run build:ts
 ```
 
 * Only build the style sheet file index.scss
 
 ```
-$ npm run build-scss
+$ npm run build:scss
 ```
 
 * Build script and style sheet together
 
 ```
-& npm run build-lib
+& npm run build:lib
 ```
 
 The files will be output to the directory "dist" in the project.
