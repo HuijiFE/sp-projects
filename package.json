@@ -1,6 +1,6 @@
 {
   "name": "template-parcel-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A template for static single page, based on parcel.js, typescript and sass.",
   "main": "index.js",
   "scripts": {
