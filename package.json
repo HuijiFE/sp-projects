@@ -8,7 +8,7 @@
     "start": "npm run dev",
     "dev": "parcel src/index.html -p 8090 --open",
     "watch": "parcel watch src/index.html",
-    "build": "NODE_ENV=production parcel build src/index.html --public-url ./",
+    "build": "NODE_ENV=production parcel build src/index.html --public-url /images/yulongzaitian/zt/publictest",
     "build:ts": "NODE_ENV=production parcel build src/index.ts --public-url ./ -o lib.js -t browser",
     "build:scss": "NODE_ENV=production parcel build src/index.scss --public-url ./ -o lib.css",
     "build:lib": "npm run build-ts && npm run build-scss"

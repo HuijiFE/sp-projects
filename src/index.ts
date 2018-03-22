@@ -1,25 +1,17 @@
 /**
- * @author: duduluu
+ * entry
  */
-import { now, today } from '@/common/util';
 
-const main: HTMLElement | null = document.querySelector('.parcel-demo .main');
+import MediaWrapper from '@/components/MediaWrapper';
+import Sections from '@/components/Sections';
+import Gallery from '@/components/Gallery';
+import Pivot from '@/components/Pivot';
 
-if (main) {
-  const section: HTMLElement = document.createElement('section');
-  const dateTime: HTMLElement = document.createElement('h2');
-  section.appendChild(dateTime);
-  main.appendChild(section);
-  setInterval(() => {
-    const time: Date = new Date();
-    const text: string = `${time
-      .toLocaleDateString('zh-CN')
-      .split('/')
-      .join('-')} ${time.toLocaleTimeString('zh-CN', { hour12: false })}`;
+const sections: Sections = new Sections('#sections');
+const mediaWrapperPlayer: MediaWrapper = new MediaWrapper('#play-video-button');
 
-    if (dateTime.innerHTML !== text) {
-      // tslint:disable-next-line:no-inner-html
-      dateTime.innerHTML = text;
-    }
-  }, 100);
-}
+const section2gallery: Gallery = new Gallery('#section-2-gallery');
+
+const section3pivot: Pivot = new Pivot('#section-3-pivot');
+
+const section4gallery: Gallery = new Gallery('#section-5-gallery');
