@@ -31,6 +31,8 @@
     "typescript": "^2.7.2"
   },
   "dependencies": {
+    "@types/animejs": "^2.0.0",
+    "animejs": "^2.2.0",
     "mustache": "^2.3.0",
     "normalize.css": "^8.0.0"
   },
