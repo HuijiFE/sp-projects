@@ -11,7 +11,7 @@
     "build": "NODE_ENV=production parcel build src/index.html --public-url ./",
     "build:ts": "NODE_ENV=production parcel build src/index.ts --public-url ./ -o lib.js -t browser",
     "build:scss": "NODE_ENV=production parcel build src/index.scss --public-url ./ -o lib.css",
-    "build:lib": "npm run build-ts && npm run build-scss",
+    "build:lib": "npm run build-ts && npm run build-scss"
   },
   "keywords": [],
   "author": "",
