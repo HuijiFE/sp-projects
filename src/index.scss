@@ -636,33 +636,11 @@ $logo-height: 107px;
 }
 
 .#{$ns}-section-1 {
-  &-title,
-  &-intro,
   &-video-button {
     user-select: none;
     color: transparent;
     position: absolute;
     @include background-contain();
-  }
-
-  &-title {
-    text-shadow: none;
-    bottom: 120px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 689px;
-    height: 147px;
-    background-image: url('assets/img/section-1-title.png');
-  }
-
-  &-intro {
-    text-shadow: none;
-    width: 252px;
-    height: 124px;
-    top: 10%;
-    left: 12%;
-    background-image: url('assets/img/section-1-intro.png');
   }
 
   &-video-button {
