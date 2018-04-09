@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="6121 3354 48 48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d1ab57"/>
+      <stop offset="1" stop-color="#ffb719"/>
+    </linearGradient>
+  </defs>
+  <g id="chip_1_" data-name="chip (1)" transform="translate(5772 3204)">
+    <g id="Group_39" data-name="Group 39" transform="translate(349 150)">
+      <path id="Path_38" data-name="Path 38" class="cls-1" d="M63.407,38.97H40.716a1.751,1.751,0,0,0-1.745,1.745V63.406a1.751,1.751,0,0,0,1.745,1.745H63.407a1.751,1.751,0,0,0,1.745-1.745V40.716A1.751,1.751,0,0,0,63.407,38.97Z" transform="translate(-28.062 -28.061)"/>
+      <path id="Path_39" data-name="Path 39" class="cls-1" d="M138.486,64.191h6.982a1.309,1.309,0,0,0,0-2.618h-6.982a1.309,1.309,0,1,0,0,2.618Z" transform="translate(-98.777 -44.337)"/>
+      <path id="Path_40" data-name="Path 40" class="cls-1" d="M145.468,81.059h-6.982a1.309,1.309,0,1,0,0,2.618h6.982a1.309,1.309,0,0,0,0-2.618Z" transform="translate(-98.777 -58.368)"/>
+      <path id="Path_41" data-name="Path 41" class="cls-1" d="M145.468,100.544h-6.982a1.309,1.309,0,1,0,0,2.618h6.982a1.309,1.309,0,0,0,0-2.618Z" transform="translate(-98.777 -72.399)"/>
+      <path id="Path_42" data-name="Path 42" class="cls-1" d="M8.291,61.573H1.309a1.309,1.309,0,0,0,0,2.618H8.291a1.309,1.309,0,0,0,0-2.618Z" transform="translate(0 -44.337)"/>
+      <path id="Path_43" data-name="Path 43" class="cls-1" d="M8.291,81.059H1.309a1.309,1.309,0,1,0,0,2.618H8.291a1.309,1.309,0,0,0,0-2.618Z" transform="translate(0 -58.368)"/>
+      <path id="Path_44" data-name="Path 44" class="cls-1" d="M8.292,100.544H1.31a1.309,1.309,0,0,0,0,2.618H8.292a1.309,1.309,0,0,0,0-2.618Z" transform="translate(-0.001 -72.399)"/>
+      <path id="Path_45" data-name="Path 45" class="cls-1" d="M62.882,9.6a1.309,1.309,0,0,0,1.309-1.309V1.309a1.309,1.309,0,0,0-2.618,0V8.291A1.31,1.31,0,0,0,62.882,9.6Z" transform="translate(-44.337 0)"/>
+      <path id="Path_46" data-name="Path 46" class="cls-1" d="M82.368,9.6a1.31,1.31,0,0,0,1.309-1.309V1.309a1.309,1.309,0,0,0-2.618,0V8.291A1.31,1.31,0,0,0,82.368,9.6Z" transform="translate(-58.368 0)"/>
+      <path id="Path_47" data-name="Path 47" class="cls-1" d="M101.854,9.6a1.31,1.31,0,0,0,1.309-1.309V1.309a1.309,1.309,0,0,0-2.618,0V8.291A1.309,1.309,0,0,0,101.854,9.6Z" transform="translate(-72.399 0)"/>
+      <path id="Path_48" data-name="Path 48" class="cls-1" d="M62.882,137.176a1.31,1.31,0,0,0-1.309,1.309v6.982a1.309,1.309,0,1,0,2.618,0v-6.982A1.309,1.309,0,0,0,62.882,137.176Z" transform="translate(-44.337 -98.776)"/>
+      <path id="Path_49" data-name="Path 49" class="cls-1" d="M82.368,137.176a1.31,1.31,0,0,0-1.309,1.309v6.982a1.309,1.309,0,1,0,2.618,0v-6.982A1.31,1.31,0,0,0,82.368,137.176Z" transform="translate(-58.368 -98.776)"/>
+      <path id="Path_50" data-name="Path 50" class="cls-1" d="M101.854,137.176a1.309,1.309,0,0,0-1.309,1.309v6.982a1.309,1.309,0,1,0,2.618,0v-6.982A1.31,1.31,0,0,0,101.854,137.176Z" transform="translate(-72.399 -98.776)"/>
+    </g>
+  </g>
+</svg>

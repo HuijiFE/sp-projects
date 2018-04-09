@@ -46,4 +46,4 @@ $ npm run build:scss
 & npm run build:lib
 ```
 
-The files will be output to the directory "dist" in the project.
+**The files will be output to the directory "dist" in the project.**

@@ -3,25 +3,219 @@ html * {
   box-sizing: border-box;
 }
 
-$background: #222;
+$ns: bt;
+$background: #000;
+$primary-color: #EC9908;
 
-.parcel-demo {
-  background-color: #282828;
+// mixins
+@mixin background-fill() {
+  background-color: transparent;
+  background-position: 0 16px;
+  background-repeat: no-repeat;
+  background-size: 33px;
 }
 
-.title {
-  color: cyan;
+@mixin background-cover() {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main {
-  color: ghostwhite;
-  background-color: $background;
-  width: 80vw;
+.#{$ns}-main {
+  width: 100%;
   min-height: 100vh;
-  padding: 32px;
-  margin: 0 auto;
+  background-color: $background;
 }
 
-.center {
-  text-align: center;
+// section content
+$section-content-height: 600px;
+$section-content-navbar-online-color: $primary-color;
+$section-content-navbar-phone-color: #ccc;
+
+.#{$ns}-section-content {
+  width: 100%;
+  height: $section-content-height;
+  @include background-cover();
+  background-image: url('assets/images/section-background.png');
+
+  & &_navbar {
+    width: 100%;
+    height: 70px;
+    &-container {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      align-content: center;
+      font-size: 16px;
+      margin-right: 360px;
+    }
+
+    &-container-online {
+      display: block;
+      width: 120px;
+      height: 100%;
+      line-height: 70px;
+      text-align: right;
+      text-decoration: none;
+      @include background-fill();
+      background-image: url('assets/images/people.svg');
+      color: $section-content-navbar-online-color;
+      margin-right: 40px;
+    }
+
+    &-container-phone {
+      color: $section-content-navbar-phone-color;
+    }
+  }
+  & &_container {
+    width: 100%;
+    height: 530px;
+
+    display: flex;
+
+    &-left {
+      flex: 0 0 60%;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-right {
+      flex: 0 0 40%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+
+
+      &-title {
+        font-size: 48px;
+        color: $primary-color;
+        line-height: 30px;
+        font-weight: normal;
+      }
+
+      &-profile {
+        font-size: 20px;
+        color: #fff;
+        line-height: 26px;
+        display: block;
+        margin-bottom: 17px;
+      }
+
+      &-intro {
+        font-size: 14px;
+        color: #ccc;
+        padding-top: 11px;
+
+        &-label {
+          line-height: 22px;
+        }
+      }
+
+
+
+    }
+  }
+  .#{$ns}-download-button {
+    text-decoration: none;
+    display: block;
+    width: 280px;
+    height: 92px; // line-height: 92px;
+    color: #fff; // text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    font-size: 34px;
+    background: linear-gradient(#D9B058, #ED9908);
+
+    &:hover {
+      background: linear-gradient( #F5A907, #F5A907);
+    }
+
+    &:active {
+      background: linear-gradient(#D9B058, #D9B058);
+    }
+
+    &.disabled {
+      background: linear-gradient(#6D6D6D, #6D6D6D);
+      color: #AAAAAA;
+
+    }
+    .#{$ns}-section-content_icon {
+      margin-right: 10px;
+    }
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  & &_image-container {
+    width: 350px;
+    height: 350px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      position: absolute;
+    }
+  }
+
+  & &_image-2 {
+    top: 40px;
+    left: 45px;
+
+  }
+
+
+}
+// section foot
+.#{$ns}-section-foot {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  &_items-wrapper {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+  }
+
+  &_item {
+    flex: 0 0 33.3%;
+    display: flex;
+    & + & {
+      margin-bottom: 70px;
+    }
+    &-icon {
+      width: 60px;
+      height: 62px;
+      flex: none;
+
+      margin-right: 32px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-title {
+      color: $primary-color;
+      display: block;
+
+    }
+
+    &-intro {
+      color: #fff;
+    }
+  }
 }
