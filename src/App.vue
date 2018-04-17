@@ -1,29 +1,56 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <up-navbar :items-source="index"></up-navbar>
+    <up-hero id="hero"></up-hero>
+    <div class="up-swimlane-wrapper">
+
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script lang="ts">
+import {
+  Vue,
+  Component,
+  Emit,
+  Inject,
+  Model,
+  Prop,
+  Provide,
+  Watch,
+} from 'vue-property-decorator';
+
+/**
+ * App
+ */
+@Component
+export default class App extends Vue {
+  public index: IndexItem[] = [
+    // {
+    //   id: 'guests',
+    //   label: '嘉宾阵容',
+    // },
+    {
+      id: 'news',
+      label: '新闻',
+    },
+    {
+      id: 'live',
+      label: '直播',
+    },
+    {
+      id: 'interpreted',
+      label: '主题解读',
+    },
+    {
+      id: 'works',
+      label: '新品大作',
+    },
+    {
+      id: 'videos',
+      label: '精彩视频',
+    },
+  ];
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+</script>
+

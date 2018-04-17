@@ -1,0 +1,49 @@
+@include comp('navbar') {
+  font-size: 1.7rem;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 8.8rem;
+  background-color: rgba($color: $color-background, $alpha: 0.73);
+
+  @include elem('inner') {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  @include elem('logo') {
+    width: 15.8rem;
+    height: 6.3rem;
+  }
+
+  @include elem('item') {
+    color: $color-foreground;
+    width: 12.8rem;
+    height: 4.2rem;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: $transition-base;
+
+    &:hover {
+      color: $color-thirdly;
+    }
+
+    @include when('selected') {
+      color: $color-primary;
+    }
+  }
+
+  @include elem('official') {
+    color: $color-foreground;
+    background-color: $color-primary;
+  }
+}

@@ -1,0 +1,66 @@
+html {
+  font-family: $font-family-base;
+  font-size: $root-font-size;
+  line-height: 1;
+
+  /**
+   * Set all elements' box-sizing as border-box:
+   * height and width include border-width.
+   */
+  box-sizing: border-box;
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  font-size: $font-base;
+  color: $color-foreground;
+  background: $color-background;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+/**
+ * Remove focus dashed line for Firefox
+ */
+a,
+label,
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+/*-------- typographic --------*/
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $line-height-base;
+}
+
+article,
+p {
+  font-size: $font-base;
+  line-height: $line-height-base;
+}

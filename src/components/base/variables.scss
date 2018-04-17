@@ -1,0 +1,88 @@
+$root-font-size: 10px;
+$root-font-size-scale-xlarge: 1.6;
+
+html {
+
+  --vd-font-size-base:    1.4rem;
+  --vd-line-height-base:  3.2rem;
+}
+
+/*-------- enum  --------*/
+
+$enum-theme:    'lite', 'dark';
+$enum-tone:     'primary', 'secondary', 'success', 'warning', 'danger';
+$enum-skin:     'fill', 'flat', 'plain', 'silk';
+$enum-shape:    'rect', 'pill', 'square', 'circle';
+$enum-size:     'xsmall', 'small', 'medium', 'large', 'xlarge';
+
+/*-------- theme --------*/
+
+$color-white: #fff;
+$color-black: #000;
+
+/*-------- tone -------*/
+
+
+/*-------- grade --------*/
+
+/*-------- acrylic --------*/
+
+/*-------- skin --------*/
+
+/*-------- shape --------*/
+$border-radius-base:      0.2rem;
+$border-width-base:       1px;
+
+/*-------- size --------*/  
+
+
+/*-------- typographic --------*/
+
+$font-family-base: 'Helvetica Neue', 'Helvetica', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', 'Arial', 'sans-serif';
+$font-family-code: 'Source Sans Pro', 'Helvetica Neue', 'Arial', 'sans-serif';
+
+$font-base:         var(--vd-font-size-base);
+$line-height-base:  var(--vd-line-height-base);
+
+/**-------- layout --------*/
+
+$breakpoint-map: (
+  xsmall:     768px,
+  small:      1024px,
+  medium:     1440px,
+  large:      1920px,
+  xlarge:     2560px,
+);
+
+@function breakpoint($key) {
+  @return map-get($breakpoint-map, $key);
+}
+
+$clamp-map: (
+  xsmall:     100%,
+  small:      880px,
+  medium:     1200px,
+  large:      1200px,
+  xlarge:     1920px,
+);
+
+@function clamp($key) {
+  @return map-get($clamp-map, $key);
+}
+
+$clamp-padding: 1.6rem;
+
+/*-------- anime --------*/
+
+$transition-base: all ease-in-out 0.2s;
+
+@function transition($duration: 200ms) {
+  @return all ease-in-out $duration;
+}
+
+/*-------- up+ 2018 -------*/
+$color-primary:     #ff7200;
+$color-secondary:   #001793;
+$color-foreground:  #ffffff;
+$color-background:  #000627;
+$color-thirdly:     #cab16e;

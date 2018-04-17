@@ -1,0 +1,7 @@
+@import '~@/components/base/VdControl';
+@import '~@/components/index';
+
+@include comp('swimlane-wrapper') {
+  min-height: 300vh;
+  background-image: url('~@/assets/wrapper-background.svg');
+}

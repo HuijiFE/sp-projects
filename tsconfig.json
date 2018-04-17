@@ -2,29 +2,22 @@
   "compilerOptions": {
     "target": "es2015",
     "module": "es2015",
+    "lib": ["dom", "scripthost", "es5", "es2015", "es2016", "es2017", "es2018", "esnext"],
     "strict": true,
+    "strictPropertyInitialization": false,
     "jsx": "preserve",
+    "jsxFactory": "h",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "types": ["node"],
     "baseUrl": ".",
-    "types": [
-      "node",
-    ],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.vue",
-    "tests/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.vue", "tests/**/*.ts"],
+  "exclude": ["node_modules"]
 }
