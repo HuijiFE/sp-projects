@@ -20,3 +20,7 @@
     box-shadow: 0 #{$i}px #{$i * 3}px 0 rgba(#000, 0.3);
   }
 }
+
+@include define-atom('font-din') {
+  font-family: 'DIN';
+}

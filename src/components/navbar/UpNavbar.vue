@@ -9,6 +9,7 @@
       <a class="up-navbar_item"
          v-for="item in itemsSource"
          :key="item.id"
+         :class="{ 'is-active': active === item.id }"
          :href="`#${item.id}`">{{item.label}}</a>
       <a class="up-navbar_item up-navbar_official"
          href="http://up.qq.com"

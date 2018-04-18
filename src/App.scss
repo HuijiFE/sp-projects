@@ -4,4 +4,5 @@
 @include comp('swimlane-wrapper') {
   min-height: 300vh;
   background-image: url('~@/assets/wrapper-background.svg');
+  background-position: center center;
 }

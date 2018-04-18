@@ -1,9 +1,21 @@
 <template>
   <div id="app">
-    <up-navbar :items-source="index"></up-navbar>
+    <up-navbar :items-source="index"
+               :active="active"></up-navbar>
+    <up-indicator :items-source="index"
+                  :active="active"></up-indicator>
     <up-hero id="hero"></up-hero>
     <div class="up-swimlane-wrapper">
-
+      <up-secondary id="secondary"></up-secondary>
+      <up-swimlane id="guests">
+        <up-guests></up-guests>
+      </up-swimlane>
+      <up-swimlane id="news"></up-swimlane>
+      <up-swimlane id="live"></up-swimlane>
+      <up-swimlane id="interpreted"></up-swimlane>
+      <up-swimlane id="works"></up-swimlane>
+      <up-swimlane id="videos"></up-swimlane>
+      <up-swimlane id="about"></up-swimlane>
     </div>
   </div>
 </template>
@@ -19,6 +31,7 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import UpSwimlane from '@/components/swimlane/UpSwimlane.vue';
 
 /**
  * App
@@ -26,10 +39,10 @@ import {
 @Component
 export default class App extends Vue {
   public index: IndexItem[] = [
-    // {
-    //   id: 'guests',
-    //   label: '嘉宾阵容',
-    // },
+    {
+      id: 'guests',
+      label: '嘉宾阵容',
+    },
     {
       id: 'news',
       label: '新闻',
@@ -51,6 +64,35 @@ export default class App extends Vue {
       label: '精彩视频',
     },
   ];
+
+  public active: string = 'hero';
+
+  private mounted(): void {
+    const swimlanes: UpSwimlane[] = [];
+    this.$nextTick(() => {
+      this.$children.forEach(child => {
+        if (child instanceof UpSwimlane) {
+          swimlanes.push(child);
+        }
+      });
+    });
+
+    const bodyRect: ClientRect = window.document.body.getBoundingClientRect();
+
+    const onScroll = () => {
+      // console.log('scroll');
+      swimlanes.forEach(sl => {
+        const rect: ClientRect = sl.$el.getBoundingClientRect();
+        const offset = rect.top - bodyRect.top;
+        // console.log(sl.id, offset);
+        if (offset >= 0 && offset < 152) {
+          this.active = sl.id;
+        }
+      });
+    };
+
+    window.addEventListener('scroll', onScroll);
+  }
 }
 </script>
 

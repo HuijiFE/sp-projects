@@ -86,3 +86,10 @@ $color-secondary:   #001793;
 $color-foreground:  #ffffff;
 $color-background:  #000627;
 $color-thirdly:     #cab16e;
+$color-dark:        #191919;
+
+@font-face {
+  font-family: 'DIN';
+  src:
+    url(~@/assets/font/DINEngschriftStd.otf) format("opentype"),
+}

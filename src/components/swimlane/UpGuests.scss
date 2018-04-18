@@ -1,0 +1,115 @@
+$guests-inner-margin: 5rem;
+$guests-item-count: 11;
+$guests-item-width: 28.2rem;
+$guests-item-height: 56.3rem;
+$guests-item-gutter: 2.4rem;
+$guests-item-content-padding: 1.6rem;
+
+@include comp('guests') {
+  user-select: none;
+  overflow: hidden;
+
+  @include elem('inner') {
+    position: relative;
+    margin: 0 $guests-inner-margin;
+  }
+
+  @include elem('item-wrapper') {
+    width: $guests-item-count * ($guests-item-width + $guests-item-gutter) -
+      $guests-item-gutter;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  @include elem('item') {
+    position: relative;
+
+    width: $guests-item-width;
+    height: $guests-item-height;
+    background-color: $color-dark;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    > * {
+      position: relative;
+    }
+  }
+
+  @include elem('photo') {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  @include elem('name') {
+    padding: 0 $guests-item-content-padding;
+  }
+
+  @include elem('name-zh') {
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  @include elem('name-en') {
+    color: $color-primary;
+    @include extend-atom('font-din');
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  @include elem('description') {
+    color: $color-thirdly;
+    padding: $guests-item-content-padding;
+    height: 9rem;
+    line-height: 1.2;
+  }
+
+  @include elem('works') {
+    color: $color-foreground;
+    background-color: $color-thirdly;
+    padding: $guests-item-content-padding;
+    height: 9rem;
+    line-height: 1.2;
+  }
+
+  @include elem('indicator') {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
+    width: 6rem;
+    height: 9rem;
+
+    background-color: $color-primary;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    &.left {
+      left: -$guests-inner-margin;
+    }
+    &.right {
+      right: -$guests-inner-margin;
+      transform: rotateZ(180deg);
+    }
+  }
+
+  @include elem('indicator-inner') {
+    width: 2.26rem;
+    height: 4rem;
+  }
+}

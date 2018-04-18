@@ -1,0 +1,54 @@
+@include comp('secondary') {
+  @include elem('inner') {
+    display: flex;
+  }
+
+  @include elem('left') {
+    position: relative;
+
+    width: 69rem;
+    height: 40rem;
+
+    flex: none;
+  }
+
+  @include elem('video-thumbnail') {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include elem('video-play') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 8rem;
+    height: 8rem;
+    fill: $color-foreground;
+  }
+
+  @include elem('right') {
+    flex: 1;
+
+    padding: 0 1.6rem;
+
+    h2 {
+      font-size: 4rem;
+      line-height: 1.2;
+      margin-top: 0;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+
+  @include elem('where') {
+    line-height: 1.5;
+    padding: 0.4rem 0.8rem;
+    border-left: 0.4rem solid $color-primary;
+  }
+}

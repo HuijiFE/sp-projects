@@ -1,0 +1,11 @@
+@include comp('swimlane') {
+  padding-top: $navbar-height + 3.2rem;
+  padding-bottom: 3.2rem;
+
+  @include elem('title') {
+    height: 5.4rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 4rem;
+  }
+}
