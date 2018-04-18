@@ -6,6 +6,8 @@ export { default as UpSwimlane } from '@/components/swimlane/UpSwimlane.vue';
 export { default as UpHero } from '@/components/hero/UpHero.vue';
 export { default as UpSecondary } from '@/components/hero/UpSecondary.vue';
 export { default as UpGuests } from '@/components/swimlane/UpGuests.vue';
+export { default as UpNews } from '@/components/swimlane/UpNews.vue';
+export { default as UpLive } from '@/components/swimlane/UpLive.vue';
 
 /**
  * Index of all components

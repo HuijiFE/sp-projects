@@ -35,6 +35,11 @@ a {
   text-decoration: none;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
 /**
  * Remove focus dashed line for Firefox
  */

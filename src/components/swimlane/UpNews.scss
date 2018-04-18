@@ -1,0 +1,65 @@
+@include comp('news') {
+  @include elem('item-wrapper') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  @include elem('item') {
+    background-color: $color-dark;
+    &:hover {
+      background-color: $color-thirdly;
+    }
+    transition: background ease-in-out 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+
+    margin-bottom: 4rem;
+  }
+
+  @include elem('thumbnail-outer') {
+    width: 100%;
+  }
+
+  @include elem('thumbnail-inner') {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  @include elem('thumbnail-container') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  @include elem('thumbnail') {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include elem('info') {
+    padding: 2rem;
+  }
+
+  @include elem('title') {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  @include elem('summary') {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 0;
+  }
+}

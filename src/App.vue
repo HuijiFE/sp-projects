@@ -10,8 +10,12 @@
       <up-swimlane id="guests">
         <up-guests></up-guests>
       </up-swimlane>
-      <up-swimlane id="news"></up-swimlane>
-      <up-swimlane id="live"></up-swimlane>
+      <up-swimlane id="news">
+        <up-news></up-news>
+      </up-swimlane>
+      <up-swimlane id="live">
+        <up-live></up-live>
+      </up-swimlane>
       <up-swimlane id="interpreted"></up-swimlane>
       <up-swimlane id="works"></up-swimlane>
       <up-swimlane id="videos"></up-swimlane>

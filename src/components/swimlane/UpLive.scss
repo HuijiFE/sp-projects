@@ -1,0 +1,109 @@
+@include comp('live') {
+  @include elem('inner') {
+    display: flex;
+  }
+
+  @include elem('left') {
+    position: relative;
+
+    width: 69rem;
+    height: 40rem;
+
+    flex: none;
+  }
+
+  @include elem('video-thumbnail') {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include elem('video-play') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 8rem;
+    height: 8rem;
+    fill: $color-foreground;
+  }
+
+  @include elem('right') {
+    height: 40rem;
+
+    flex: 1;
+    padding-left: 1.6rem;
+  }
+
+  @include elem('table') {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  @include elem('table-header') {
+    height: 4.3rem;
+    border-bottom: 0.3rem solid $color-primary;
+
+    display: flex;
+    flex: none;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  @include elem('table-header-item') {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color-foreground;
+    background-color: $color-dark;
+    @include when('selected') {
+      background-color: $color-primary;
+    }
+    border: none;
+  }
+
+  @include elem('table-body') {
+    background-color: $color-dark;
+    padding: 0.8rem 0.8rem;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  @include elem('table-item') {
+    font-size: 1.4rem;
+    line-height: 1.6;
+
+    display: flex;
+
+    &.header {
+      border-bottom: 0.1rem solid $color-thirdly;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  @include elem('table-item-time') {
+    width: 6.4rem;
+    padding: 0 0.8rem;
+    flex: none;
+  }
+
+  @include elem('table-item-label') {
+    padding: 0 0.8rem;
+    flex: 1;
+  }
+}
