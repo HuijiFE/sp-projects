@@ -1,0 +1,143 @@
+@include comp('works') {
+  @include elem('inner') {
+    display: flex;
+    height: 54.2rem;
+    background-color: $color-dark;
+  }
+
+  @include elem('left') {
+    position: relative;
+    flex: 1;
+  }
+
+  @include elem('right') {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+
+  @include elem('cover') {
+    position: relative;
+    width: 100%;
+    height: 56.25%;
+  }
+
+  @include elem('cover-container') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+
+  @include elem('background') {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include elem('foreground') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @include elem('logo') {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 25%;
+    height: 25%;
+    object-fit: contain;
+  }
+
+  @include elem('mask') {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(0deg, $color-dark 5%, transparent 95%);
+  }
+
+  @include elem('title') {
+    position: relative;
+    margin: 0;
+    padding: 0 1.6rem;
+
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+  @include elem('description') {
+    padding: 0 1.6rem;
+    color: $color-thirdly;
+  }
+
+  @include elem('item') {
+    position: relative;
+
+    width: 50%;
+    height: 33.333%;
+
+    padding: 0;
+    margin: 0;
+
+    color: $color-foreground;
+    background-color: #fff;
+    border: none;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  @include elem('item-foreground') {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    background-color: rgba($color: $color-secondary, $alpha: 0.7);
+    transition: background ease-in-out 0.2s;
+  }
+
+  @include elem('item') {
+    @include when('selected') {
+      @include elem('item-foreground') {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @include elem('item-background') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &.inner {
+      object-fit: contain;
+    }
+  }
+}

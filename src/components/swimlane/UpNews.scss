@@ -46,15 +46,16 @@
   }
 
   @include elem('info') {
+    color: $color-foreground;
     padding: 2rem;
   }
 
   @include elem('title') {
     font-size: 2rem;
     font-weight: bold;
-    line-height: 1;
+    line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 
   @include elem('summary') {

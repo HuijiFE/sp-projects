@@ -15,10 +15,11 @@
             </div>
           </div>
         </div>
-        <div class="up-news_info">
+        <a class="up-news_info"
+           :href="item.href">
           <h3 class="up-news_title">{{item.title}}</h3>
-          <p class="up-news_summary">{{item.summary}}</p>
-        </div>
+          <!-- <p class="up-news_summary">{{item.summary}}</p> -->
+        </a>
       </div>
     </div>
   </div>
@@ -37,9 +38,10 @@ import {
 } from 'vue-property-decorator';
 
 interface NewsInfo {
+  href: string;
   thumbnail: string;
   title: string;
-  summary: string;
+  summary?: string;
 }
 
 /**
@@ -51,40 +53,28 @@ export default class UpNews extends Vue {
 
   public news: NewsInfo[] = [
     {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
+      href: 'http://ol.tgbus.com/201804/07766173817.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/19/1/bd8e97ca696116310a72a73bf8675ee9.jpg',
+      title: '主题海报曝光！UP2018腾讯动漫将公布重大战略举措',
     },
     {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
+      href: 'http://ol.tgbus.com/201804/07569173813.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/19/1/c76552b9429c7a654bf035830b2d2fd5.jpg',
+      title: '阅文集团超人气白金作家净无痕：最“怕”被催更',
     },
     {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
+      href: 'http://ol.tgbus.com/201804/07092173810.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/19/1/7169a1abd6afcce76a2f9cc741ed9bab.jpg',
+      title: '《英雄联盟》游戏汉化执行：懂，要“信达雅”',
     },
     {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
-    },
-    {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
-    },
-    {
-      thumbnail: `${this.baseUrl}img/guests/Michael-Dobbs.jpg`,
-      title: '腾讯新文创生态大会',
-      summary:
-        '腾讯新文创生态大会将于4月22日-23日在北京举办，作为汇聚文创行业前沿思想的交流平台。的交流平台。流平台。',
+      href: 'http://ol.tgbus.com/201804/06951173808.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/19/1/776f655fc580ac40cbc6507152e9da60.jpg',
+      title: '《一人之下》声优小连杀：人家说我是“怪物”',
     },
   ];
 }

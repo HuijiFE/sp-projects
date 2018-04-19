@@ -16,8 +16,12 @@
       <up-swimlane id="live">
         <up-live></up-live>
       </up-swimlane>
-      <up-swimlane id="interpreted"></up-swimlane>
-      <up-swimlane id="works"></up-swimlane>
+      <!-- <up-swimlane id="interpreted">
+        <up-interpreted></up-interpreted>
+      </up-swimlane> -->
+      <up-swimlane id="works">
+        <up-works></up-works>
+      </up-swimlane>
       <up-swimlane id="videos"></up-swimlane>
       <up-swimlane id="about"></up-swimlane>
     </div>
@@ -55,10 +59,10 @@ export default class App extends Vue {
       id: 'live',
       label: '直播',
     },
-    {
-      id: 'interpreted',
-      label: '主题解读',
-    },
+    // {
+    //   id: 'interpreted',
+    //   label: '主题解读',
+    // },
     {
       id: 'works',
       label: '新品大作',
