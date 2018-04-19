@@ -13,7 +13,8 @@
          :href="`#${item.id}`">{{item.label}}</a>
       <a class="up-navbar_item up-navbar_official"
          href="http://up.qq.com"
-         target="_blank">UP2018官网</a>
+         target="_blank"
+         rel="noopener noreferrer">UP2018官网</a>
     </up-clamp>
   </div>
 </template>
