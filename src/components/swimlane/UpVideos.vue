@@ -4,13 +4,16 @@
          src="@/assets/精彩视频.svg"
          alt="精彩视频">
     <div class="up-videos_inner">
-      <div class="up-videos_left">
+      <a class="up-videos_left"
+         href="http://up.qq.com"
+         target="_blank"
+         rel="noopener noreferrer">
         <img src="@/assets/main-background.jpg"
              alt="视频"
              class="up-videos_video-thumbnail">
         <font-awesome class="up-videos_video-play"
                       icon="play-circle"></font-awesome>
-      </div>
+      </a>
       <div class="up-videos_right">
         <div class="up-videos_item-wrapper">
           <button class="up-videos_item"
