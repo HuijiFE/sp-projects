@@ -62,6 +62,7 @@
       }
     ],
     "no-trailing-whitespace": true,
+    "no-irregular-whitespace": false,
     "comment-format": [true, "check-space"],
     "no-suspicious-comment": false,
     "jsdoc-format": true,

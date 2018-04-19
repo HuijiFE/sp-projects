@@ -7,7 +7,7 @@
       <a class="up-videos_left"
          href="http://up.qq.com"
          target="_blank"
-         rel="noopener noreferrer">
+         >
         <img src="@/assets/main-background.jpg"
              alt="视频"
              class="up-videos_video-thumbnail">

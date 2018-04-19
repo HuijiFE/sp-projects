@@ -97,7 +97,7 @@ export default class App extends Vue {
         const rect: ClientRect = sl.$el.getBoundingClientRect();
         const offset = rect.top - bodyRect.top;
         // console.log(sl.id, offset);
-        if (offset >= 0 && offset < 152) {
+        if (offset > -152 && offset < 152) {
           this.active = sl.id;
         }
       });

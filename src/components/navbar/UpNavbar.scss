@@ -24,6 +24,12 @@ $navbar-height: 8.8rem;
     height: 6.3rem;
   }
 
+  @include elem('line') {
+    width: 0.1rem;
+    height: 5.7rem;
+    background-color: $color-foreground;
+  }
+
   @include elem('item') {
     color: $color-foreground;
     width: 12.8rem;
