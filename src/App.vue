@@ -22,8 +22,12 @@
       <up-swimlane id="works">
         <up-works></up-works>
       </up-swimlane>
-      <up-swimlane id="videos"></up-swimlane>
-      <up-swimlane id="about"></up-swimlane>
+      <up-swimlane id="videos">
+        <up-videos></up-videos>
+      </up-swimlane>
+      <up-swimlane id="about">
+        <up-about></up-about>
+      </up-swimlane>
     </div>
   </div>
 </template>

@@ -10,6 +10,8 @@ export { default as UpNews } from '@/components/swimlane/UpNews.vue';
 export { default as UpLive } from '@/components/swimlane/UpLive.vue';
 export { default as UpInterpreted } from '@/components/swimlane/UpInterpreted.vue';
 export { default as UpWorks } from '@/components/swimlane/UpWorks.vue';
+export { default as UpVideos } from '@/components/swimlane/UpVideos.vue';
+export { default as UpAbout } from '@/components/swimlane/UpAbout.vue';
 
 /**
  * Index of all components

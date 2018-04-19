@@ -1,0 +1,7 @@
+@include comp('about') {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+  }
+}
