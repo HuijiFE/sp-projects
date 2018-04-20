@@ -4,7 +4,8 @@
          ref="inner">
 
       <div class="up-h5_section"
-           id="hero">
+           id="hero"
+           :class="{ 'is-selected': selected.label === 'hero' }">
         <img class="up-h5_background"
              src="@/assets/h5-background.png" />
 
@@ -25,7 +26,8 @@
       <div class="up-h5_section"
            v-for="item in works"
            :key="item.label"
-           :id="item.label">
+           :id="item.label"
+           :class="{ 'is-selected': selected.label === item.label }">
 
         <img class="up-h5_work-background"
              :src="`${baseUrl}img/works/${item.label}-背景.png`">
@@ -54,7 +56,8 @@
       </div>
 
       <div class="up-h5_section"
-           id="footer">
+           id="footer"
+           :class="{ 'is-selected': selected.label === 'footer' }">
         <img src="@/assets/lastpage.png"
              alt=""
              class="up-h5_lastpage">
