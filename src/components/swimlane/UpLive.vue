@@ -6,8 +6,7 @@
     <div class="up-live_inner">
       <a class="up-live_left"
          href="http://up.qq.com"
-         target="_blank"
-         >
+         target="_blank">
         <img src="@/assets/main-background.jpg"
              alt="视频"
              class="up-live_video-thumbnail">
@@ -52,14 +51,6 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-
-interface AgendaInfo {
-  time: string;
-  items: {
-    time: string;
-    label: string;
-  }[];
-}
 
 /**
  * Control News

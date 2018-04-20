@@ -6,8 +6,7 @@
     <div class="up-videos_inner">
       <a class="up-videos_left"
          href="http://up.qq.com"
-         target="_blank"
-         >
+         target="_blank">
         <img src="@/assets/main-background.jpg"
              alt="视频"
              class="up-videos_video-thumbnail">
@@ -42,12 +41,6 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-
-interface VideoInfo {
-  thumbnail: string;
-  label: string;
-  href: string;
-}
 
 /**
  * Control Videos

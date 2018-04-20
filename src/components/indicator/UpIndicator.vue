@@ -1,10 +1,6 @@
 <template>
   <div class="up-indicator">
-    <a class="up-indicator_item"
-       :class="{ 'is-active': active === 'hero' || active === 'secondary' }"
-       :href="`#hero`">
-      <span class="up-indicator_item-inner"></span>
-    </a>
+    <slot></slot>
     <a class="up-indicator_item"
        v-for="item in itemsSource"
        :key="item.id"

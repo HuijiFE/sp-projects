@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2299.26 281.92 67.44 26.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#推荐大作);
+      }
+    </style>
+    <filter id="推荐大作" x="2299.26" y="281.92" width="67.44" height="26.94" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="推荐大作-2" data-name="推荐大作" class="cls-1" d="M14.24-12.08H11.62v2.62h2.62v1.44H11.62v2.6h2.62v1.44H11.62v2.6h2.62V.06H7.62v1.3H6.18v-12.1L5.04-9.34l-1.12-.9,1.1-1.38H3.82v4.06L4.4-8.2l1.08.98L3.82-5.42V1.04H1.46V-.4h.92V-5.2H.96V-6.64H2.38v-4.98H.76v-1.44H2.38v-3.5H3.82v3.5H5.1v1.36l1.08-1.36V-16.2H7.62v2.68H10.8l-1.2-1.7,1.2-.82,1.34,1.9-.88.62h2.98ZM7.62-9.46h2.56v-2.62H7.62Zm0,8.08h2.56v-2.6H7.62Zm0-4.04h2.56v-2.6H7.62ZM21.7-12.14v1.02h7.24v1.44h-7.6L19.68-7.42V1.36H18.24V-5.46L17.02-3.82l-1.14-.86,3.66-5h-3.5v-1.44h4.22v-1.02ZM21-8.28h7.52v2.06L26.54-4.38h2.68v1.44h-3.5V.98H22.48V-.46h1.8V-2.94H20.6V-4.38h3.84L27.08-6.8v-.04H21Zm8.22-5.38H26.38v1.38H24.94v-1.38h-4.9v1.38H18.6v-1.38H15.76V-15.1H18.6v-1.48h1.44v1.48h4.9v-1.48h1.44v1.48h2.84Zm15,3.62H38.5L44.18.4l-1.26.68L37.5-8.9,32.06,1.08,30.8.4l5.68-10.44H30.76v-1.44h6.02v-5.06h1.44v5.06h6Zm8.16,11.4v-13.7L51-10.06l-1.22-.76,1.62-2.7v-3.04h1.44v2.52H59.2v1.44H53.82v3.76H59.2V-7.4H53.82v3.54H59.2v1.44H53.82V1.36ZM50.32-15.46,49.2-13.42V1.36H47.76V-10.78l-.72,1.3-1.26-.7,3.28-5.96Z" transform="translate(2303 302)"/>
+  </g>
+</svg>

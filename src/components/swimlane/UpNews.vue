@@ -37,14 +37,6 @@ import {
   Watch,
 } from 'vue-property-decorator';
 
-interface NewsInfo {
-  hrefTgbus: string;
-  href178: string;
-  thumbnail: string;
-  title: string;
-  summary?: string;
-}
-
 /**
  * Control News
  */

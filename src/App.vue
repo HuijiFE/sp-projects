@@ -3,7 +3,13 @@
     <up-navbar :items-source="index"
                :active="active"></up-navbar>
     <up-indicator :items-source="index"
-                  :active="active"></up-indicator>
+                  :active="active">
+      <a class="up-indicator_item"
+         :class="{ 'is-active': active === 'hero' || active === 'secondary' }"
+         :href="`#hero`">
+        <span class="up-indicator_item-inner"></span>
+      </a>
+    </up-indicator>
     <up-hero id="hero"></up-hero>
     <div class="up-swimlane-wrapper">
       <up-secondary id="secondary"></up-secondary>

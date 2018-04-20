@@ -44,12 +44,6 @@ import {
   Watch,
 } from 'vue-property-decorator';
 
-interface WorkInfo {
-  label: string;
-  title: string;
-  description: string;
-}
-
 /**
  * Control Works
  */

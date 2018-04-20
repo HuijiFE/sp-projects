@@ -45,17 +45,9 @@ import {
   Watch,
 } from 'vue-property-decorator';
 import { styler, tween, easing, decay, listen, pointer, value } from 'popmotion';
+import { Easing } from 'popmotion/easing';
 import { Styler } from 'stylefire/styler/types';
 import { ValueReaction } from 'popmotion/reactions/value';
-import { Easing } from 'popmotion/easing';
-
-interface GuestInfo {
-  photo: string;
-  name_zh: string;
-  name_en: string;
-  description: string;
-  works: string;
-}
 
 const ease: Easing = easing.easeInOut;
 
