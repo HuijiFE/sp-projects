@@ -28,16 +28,27 @@
       "check-else",
       "check-whitespace"
     ],
-    "quotemark": [true, "single", "avoid-escape"],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
     "trailing-comma": [true, "all"],
     "semicolon": [true, "always", "ignore-bound-class-methods"],
     "whitespace": [
-      true,
+      false,
       "check-branch",
       "check-decl",
       "check-operator",
+      "check-module",
       "check-separator",
-      "check-type"
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
     ],
     "typedef-whitespace": [
       true,
@@ -57,7 +68,9 @@
       }
     ],
     "no-trailing-whitespace": true,
+    "no-irregular-whitespace": false,
     "comment-format": [true, "check-space"],
+    "no-suspicious-comment": false,
     "jsdoc-format": true,
     "no-internal-module": true,
     "no-submodule-imports": false,
@@ -66,6 +79,8 @@
     "import-name": false,
     "export-name": false,
     "ordered-imports": false,
-    "no-default-export": false
+    "no-default-export": false,
+    "react-this-binding-issue": false,
+    "no-backbone-get-set-outside-model": false
   }
 }
