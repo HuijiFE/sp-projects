@@ -4,12 +4,12 @@
 // tslint:disable:no-reserved-keywords
 import 'normalize.css';
 import Vue from 'vue';
-import * as components from '@/components';
-import App from '@/App.vue';
-// import App from '@/H5.vue';
+// import * as components from '@/components';
+// import App from '@/App.vue';
+import App from '@/H5.vue';
 import '@/App.scss';
 
-Object.entries(components).forEach(([name, comp]) => Vue.component(name, comp));
+// Object.entries(components).forEach(([name, comp]) => Vue.component(name, comp));
 
 Vue.config.productionTip = false;
 

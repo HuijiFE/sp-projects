@@ -212,7 +212,6 @@ $anime-index: 0;
 
   @include define-atom('anime-float-init') {
     opacity: 0;
-    opacity: 0;
     transform: translateY(10vh);
   }
   @include define-atom('anime-float') {
