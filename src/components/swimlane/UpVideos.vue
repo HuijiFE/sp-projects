@@ -5,7 +5,7 @@
          alt="精彩视频">
     <div class="up-videos_inner">
       <a class="up-videos_left"
-         href="http://up.qq.com"
+         :href="selected.href"
          target="_blank">
         <img class="up-videos_video-thumbnail"
              :src="selected.thumbnail"

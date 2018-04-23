@@ -12,8 +12,8 @@
              src="@/assets/with-love-we-create.svg"
              alt="向爱而生" />
         <div class="up-hero_info">
-          <a href=""
-             class="up-hero_gift">领取<br/>礼包</a>
+          <!-- <a href=""
+             class="up-hero_gift">领取<br/>礼包</a> -->
           <span class="up-hero_where">北京国家会议中心<br/>4.22 - 4.23</span>
         </div>
         <div class="up-hero_scroll">
