@@ -77,6 +77,27 @@ export default class UpNews extends Vue {
         'http://img-sg.tgbusdata.cn/ol/2018/04/19/1/776f655fc580ac40cbc6507152e9da60.jpg',
       title: '《一人之下》声优小连杀：人家说我是“怪物”',
     },
+    {
+      hrefTgbus: 'http://ol.tgbus.com/201804/54474173979.html',
+      href178: 'http://news.178.com/201804/318452502194.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/0f286e81bb25c293636b12fa407e0b89.jpg',
+      title: '腾讯举办新文创生态大会 11位全球文创大师精彩开讲',
+    },
+    {
+      hrefTgbus: 'http://ol.tgbus.com/201804/54859173987.html',
+      href178: 'http://news.178.com/201804/318452835526.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/0f286e81bb25c293636b12fa407e0b89.jpg',
+      title: '腾讯新文创生态大会 | 11位文创大师如是说',
+    },
+    {
+      hrefTgbus: 'http://ol.tgbus.com/201804/54676173986.html',
+      href178: 'http://news.178.com/201804/318452716287.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/24ee22b9d1a51afcbcd0ffd30c05f159.jpg',
+      title: 'UP2018 腾讯程武：新文创时代的数字文化构建',
+    },
   ];
 }
 </script>

@@ -7,9 +7,9 @@
       <a class="up-videos_left"
          href="http://up.qq.com"
          target="_blank">
-        <img src="@/assets/main-background.jpg"
-             alt="视频"
-             class="up-videos_video-thumbnail">
+        <img class="up-videos_video-thumbnail"
+             :src="selected.thumbnail"
+             alt="视频">
         <font-awesome class="up-videos_video-play"
                       icon="play-circle"></font-awesome>
       </a>
@@ -21,7 +21,7 @@
                   :class="{ 'is-selected': item === selected }"
                   @click="select(item)">
             <img class="up-videos_item-thumbnail"
-                 src="@/assets/main-background.jpg">
+                 :src="item.thumbnail">
             <span class="up-videos_item-label">{{item.label}}</span>
           </button>
         </div>
@@ -51,9 +51,14 @@ export default class UpVideos extends Vue {
 
   public videos: VideoInfo[] = [
     {
-      thumbnail: ``,
-      label: 'UP2018腾讯新文创生态大会开场视频',
-      href: '',
+      thumbnail: `http://img-sg.tgbusdata.cn/shouji/2018/04/23/1/d57af5b4c33e810358077ee494b24623.jpg`,
+      label: '国漫新作《超神灵主》热血开更！',
+      href: 'https://v.qq.com/x/cover/x6jwrgbjehysagh/n06341bdmch.html',
+    },
+    {
+      thumbnail: `http://img-sg.tgbusdata.cn/shouji/2018/04/23/1/fbd214c89b1fc9bef40bf3e99707d77d.jpg`,
+      label: '狐妖小红娘手游18年秋上线 超还原王权富贵篇剧情首曝',
+      href: 'https://v.qq.com/x/cover/x6jwrgbjehysagh/h0634kh8r40.html',
     },
   ];
 
