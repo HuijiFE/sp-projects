@@ -98,6 +98,62 @@ export default class UpNews extends Vue {
         'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/24ee22b9d1a51afcbcd0ffd30c05f159.jpg',
       title: 'UP2018 腾讯程武：新文创时代的数字文化构建',
     },
+    {
+      title: '腾讯程武：从“泛娱乐”到“新文创”的五个关键点',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68404174029.html',
+      href178: 'http://news.178.com/201804/318468023642.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/5420ca4b6dcf7203dde1affcb9882c22.jpg',
+    },
+    {
+      title: 'UP2018腾讯动漫品牌理念升级 多元内容覆盖传统与潮流文化：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68588174031.html',
+      href178: 'http://news.178.com/201804/318468168341.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/226cc9a53fb6e505c013d4465641b25f.jpg',
+    },
+    {
+      title: '腾讯影业成立腾影发行 全版权开发古龙全系列：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68880174036.html',
+      href178: 'http://news.178.com/201804/318468348935.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/d08c6fc5bd647e0529f3bcfc9a666472.jpg',
+    },
+    {
+      title: '新文创大会腾讯游戏学院构建人才培养生态',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68043174023.html',
+      href178: 'http://news.178.com/201804/318468531375.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/4805f2f06dd14841a51aeb38349e309c.jpg',
+    },
+    {
+      title: '腾讯游戏发布全新愿景 探索游戏更多可能：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68173174025.html',
+      href178: 'http://news.178.com/201804/318468944612.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/5e4539ea4c38f2232ee24cc60a1f4235.jpg',
+    },
+    {
+      title: '聚势勃发 阅文携IP战略体系亮相“腾讯新文创生态大会”：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68260174027.html',
+      href178: 'http://news.178.com/201804/318469082922.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/bfa8c05fd41cab22a3e968a0493eb3d6.jpg',
+    },
+    {
+      title: '探索游戏更多可能，腾讯游戏全面布局功能游戏探索游戏社会价值：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68329174028.html',
+      href178: 'http://news.178.com/201804/318469258608.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/a93903059ee6891b66f80234459f5c83.jpg',
+    },
+    {
+      title: '腾讯电竞体育化布局 发布电竞运动城市发展计划：',
+      hrefTgbus: 'http://ol.tgbus.com/201804/68114174024.html',
+      href178: 'http://news.178.com/201804/318469320315.html',
+      thumbnail:
+        'http://img-sg.tgbusdata.cn/ol/2018/04/23/1/23620a5acd784fc53942d147567d1d1f.jpg',
+    },
   ];
 }
 </script>
