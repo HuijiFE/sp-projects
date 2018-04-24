@@ -30,11 +30,11 @@
            :class="{ 'is-selected': selected.label === item.label }">
 
         <img class="up-h5_work-background"
-             :src="`${baseUrl}img/works_overwrite/${item.label}-背景.png`">
+             :src="`${baseUrl}img/works_v2/${item.label}-背景.png`">
         <img class="up-h5_work-foreground"
-             :src="`${baseUrl}img/works_overwrite/${item.label}-前景.png`">
+             :src="`${baseUrl}img/works_v2/${item.label}-前景.png`">
         <img class="up-h5_work-logo"
-             :src="`${baseUrl}img/works_overwrite/${item.label}-logo.png`">
+             :src="`${baseUrl}img/works_v2/${item.label}-logo.png`">
         <img class="up-h5_tag"
              src="@/assets/推荐大作.svg"
              alt="推荐大作">

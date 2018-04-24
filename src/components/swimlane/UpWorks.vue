@@ -8,7 +8,7 @@
         <div class="up-works_cover">
           <div class="up-works_cover-container">
             <img class="up-works_background"
-                 :src="`${baseUrl}img/works/${selected.label}.png`"
+                 :src="`${baseUrl}img/works_v2/${selected.label}.png`"
                  alt="">
             <div class="up-works_mask"></div>
             <h3 class="up-works_title">{{selected.title}}</h3>
@@ -24,7 +24,7 @@
                 @click="select(item)"
                 @mousemove="select(item)">
           <img class="up-works_item-background"
-               :src="`${baseUrl}img/works/${item.label}.png`">
+               :src="`${baseUrl}img/works_v2/${item.label}.png`">
           <span class="up-works_item-foreground">{{item.label}}</span>
         </button>
       </div>
