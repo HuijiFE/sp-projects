@@ -29,7 +29,8 @@ $primary-color: #EC9908;
 }
 
 // section content
-$section-content-height: 600px;
+$section-content-notice-height: 48px;
+$section-content-height: 600px + $section-content-notice-height;
 $section-content-navbar-online-color: $primary-color;
 $section-content-navbar-phone-color: #ccc;
 
@@ -119,6 +120,39 @@ $section-content-navbar-phone-color: #ccc;
 
     }
   }
+
+  & &_notice {
+    height: $section-content-notice-height;
+
+    min-width: 100%;
+    flex: 0 1 100%;
+
+    background-color: rgba($color: #000000, $alpha: 0.5);
+
+    &-wrapper {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &-link {
+      &-icon {
+        height: 1em;
+        margin-right: 4px;
+      }
+
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .#{$ns}-download-button {
     text-decoration: none;
     display: block;
