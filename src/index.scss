@@ -1,4 +1,9 @@
-@import '../node_modules/normalize.css/normalize';
+@import '~normalize.css';
+
+$namespace: 'sp';
+@import './CEP.scss';
+
+
 html * {
   box-sizing: border-box;
 }
