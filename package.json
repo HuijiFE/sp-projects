@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/animejs": "^2.0.0",
     "@types/mustache": "^0.8.30",
     "@types/node": "^9.4.7",
     "autoprefixer": "^8.1.0",
@@ -32,9 +31,9 @@
     "typescript": "^2.7.2"
   },
   "dependencies": {
-    "animejs": "^2.2.0",
     "mustache": "^2.3.0",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "popmotion": "^8.2.2"
   },
   "engines": {
     "node": ">= 8.0.0",
