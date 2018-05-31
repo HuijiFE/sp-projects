@@ -1,6 +1,9 @@
 {
   "defaultSeverity": "error",
-  "extends": "tslint-microsoft-contrib",
+  "extends": ["tslint-microsoft-contrib"],
+  "linterOptions": {
+    "exclude": ["node_modules/**"]
+  },
   "rules": {
     "class-name": true,
     "interface-name": false,
@@ -8,6 +11,8 @@
     "no-var-keyword": true,
     "no-null-keyword": true,
     "strict-boolean-expressions": false,
+    "prefer-type-cast": false,
+    "no-angle-bracket-type-assertion": true,
     "typedef": [
       true,
       "call-signature",
@@ -67,8 +72,8 @@
         "variable-declaration": "onespace"
       }
     ],
+    "no-void-expression": false,
     "no-trailing-whitespace": true,
-    "no-irregular-whitespace": false,
     "comment-format": [true, "check-space"],
     "no-suspicious-comment": false,
     "jsdoc-format": true,
@@ -76,6 +81,7 @@
     "no-submodule-imports": false,
     "no-implicit-dependencies": false,
     "match-default-export-name": false,
+    "max-classes-per-file": false,
     "import-name": false,
     "export-name": false,
     "ordered-imports": false,

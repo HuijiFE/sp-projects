@@ -6,16 +6,18 @@
 
 ### Installation
 
+```bash
+clone git@github.com:HuijiFE/template-parcel-ts.git my-project
+cd my-project
+yarn
 ```
-$ clone git@github.com:HuijiFE/template-parcel-ts.git /path/to/my/project
-$ cd /path/to/my/project
-$ npm run frame
-```
+
+> NOTE: It is recommend that `yarn` be used for installing dependencies.
 
 ### Development
 
-```
-$ npm start
+```bash
+yarn serve
 ```
 
 Configure the port: edit the package.json and replace the port number in the script "start".
@@ -24,26 +26,26 @@ Configure the port: edit the package.json and replace the port number in the scr
 
 * Build the index.html, it's including the index.ts and index.scss files
 
-```
-$ npm run build
+```bash
+yarn build
 ```
 
 * Only build the script file index.ts
 
-```
-$ npm run build:ts
+```bash
+yarn build:ts
 ```
 
-* Only build the style sheet file index.scss
+* Only build the stylesheet file index.scss
 
-```
-$ npm run build:scss
+```bash
+yarn build:scss
 ```
 
 * Build script and style sheet together
 
-```
-& npm run build:lib
+```bash
+yarn build:lib
 ```
 
 The files will be output to the directory "dist" in the project.
