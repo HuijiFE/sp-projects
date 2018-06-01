@@ -20,7 +20,6 @@
   "scss.lint.idSelector": "warning",
   "less.lint.important": "warning",
   "less.lint.float": "warning",
-
   "tslint.enable": true,
   "tslint.run": "onSave",
   "tslint.configFile": "tslint.json",
