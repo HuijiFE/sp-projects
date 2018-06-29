@@ -1,14 +1,12 @@
 /**
- *
  * CEP
  * The css class naming rule based on component, something like BEM.
- *
  */
 
-/*----------  Component  ----------*/
+/* ----------  Component  ---------- */
 
 @function class-comp($component) {
-  @if $component !=to-lower-case($component) {
+  @if $component != to-lower-case($component) {
     @error 'Must use lower case class name for a component. "#{$component}"';
   }
   @return '#{$namespace}-#{$component}';
@@ -16,12 +14,11 @@
 
 /**
  * Generate root selector for a component/control.
- *
+ * 
  * @include comp('button') {}
- *
+ * 
  * .vd-button {}
  */
-
 @mixin comp($component) {
   $C: class-comp($component) !global;
 
@@ -30,7 +27,7 @@
   }
 }
 
-/*----------  Element  ----------*/
+/* ----------  Element  ---------- */
 
 @function class-elem($element) {
   @return '#{$C}_#{$element}';
@@ -38,16 +35,15 @@
 
 /**
  * Generate selector for elements, support multi elements.
- *
+ * 
  * @include comp('button') {
  *   @include elem('icon') {}
  * }
- *
+ * 
  * .vd-button {
  *   .vd-button_icon {}
  * }
  */
-
 @mixin elem($element-list...) {
   $selector: &;
 
@@ -66,18 +62,17 @@
 
 /**
  * Generate adjacent sibling combinator for elements.
- *
+ * 
  * @include comp('list') {
  *   @include elem-adjacent('item') {}
  * }
- *
+ * 
  * .vd-list {
  *   .vd-list_item + .vd-list_item {}
  * }
  */
-
 @mixin elem-adjacent($element-former, $element-target: null) {
-  @if $element-target==null {
+  @if $element-target == null {
     $element-target: $element-former;
   }
   $selector: &;
@@ -93,18 +88,17 @@
 
 /**
  * Generate general sibling combinator for elements.
- *
+ * 
  * @include comp('list') {
  *   @include elem-general('item') {}
  * }
- *
+ * 
  * .vd-list {
  *   .vd-list_item ~ .vd-list_item {}
  * }
  */
-
 @mixin elem-general($element-former, $element-target: null) {
-  @if $element-target==null {
+  @if $element-target == null {
     $element-target: $element-former;
   }
   $selector: &;
@@ -118,7 +112,7 @@
   }
 }
 
-/*----------  Property  ----------*/
+/* ----------  Property  ---------- */
 
 @function class-prop($property, $value) {
   @return '#{$namespace}p-#{$property}_#{$value}';
@@ -126,16 +120,15 @@
 
 /**
  * Generate selector for properties of a component/control.
- *
+ * 
  * @include comp('button') {
  *   @include prop(( skin: 'plain', theme: 'dark', )) {}
  * }
- *
+ * 
  * .vd-button.vdp-skin-plain.vdp-theme-dark {}
- *
+ * 
  * NOTE: The prop mixin is only for components, not for elements
  */
-
 @mixin prop($property-map-list...) {
   @each $property-map in $property-map-list {
     $props-selector: '';
@@ -151,7 +144,7 @@
   }
 }
 
-/*----------  Status  ----------*/
+/* ----------  Status  ---------- */
 
 @function class-status($status) {
   @return 'is-#{$status}';
@@ -159,26 +152,25 @@
 
 /**
  * Generate selector for boolean properties of a component/control.
- *
+ * 
  * @include comp('menu-item') {
  *   @include when('selected') {}
  * }
- *
+ * 
  * .menu-item.is-selected {}
- *
+ * 
  * ----
- *
+ * 
  * @include comp('list') {
  *   @include elem('item') {
  *     @include when('selected', 'raised') {}
  *   }
  * }
- *
+ * 
  * .vd-list {
  *   .vd-list_item.is-selected.is-raised {}
  * }
  */
-
 @mixin when($status) {
   $selector: &;
 
@@ -216,11 +208,11 @@
   }
 }
 
-/*----------  Atomic  ----------*/
+/* ----------  Atomic  ---------- */
 
 @function class-atom($name, $value: null) {
   $class-name: '#{$namespace}a-#{$name}';
-  @if $value !=null {
+  @if $value != null {
     $class-name: '#{$class-name}_#{$value}';
   }
   @return $class-name;
