@@ -20,32 +20,32 @@ yarn
 yarn serve
 ```
 
-Configure the port: edit the package.json and replace the port number in the script "start".
+Configure the port and public url: edit the package.json and replace the port number in the script "start".
 
 ### Production
 
-* Build the index.html, it's including the index.ts and index.scss files
+- Build the index.html, it's including the script and style files
 
 ```bash
 yarn build
 ```
 
-* Only build the script file index.ts
+- Only build the script file index.ts
 
 ```bash
-yarn build:ts
+yarn build:script
 ```
 
-* Only build the stylesheet file index.scss
+- Only build the stylesheet file index.scss
 
 ```bash
-yarn build:scss
+yarn build:style
 ```
 
-* Build script and style sheet together
+- Build script and style sheet together
 
 ```bash
-yarn build:lib
+yarn build:assets
 ```
 
 The files will be output to the directory "dist" in the project.
