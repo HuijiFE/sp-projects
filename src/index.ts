@@ -21,5 +21,5 @@ if (main) {
       // tslint:disable-next-line:no-inner-html
       dateTime.innerHTML = text;
     }
-  }, 100);
+  }, 1000);
 }

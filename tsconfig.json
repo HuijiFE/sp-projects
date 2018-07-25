@@ -1,20 +1,32 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "scripthost", "es5", "es2015", "es2016", "es2017", "es2018", "esnext"],
-    "target": "es5",
-    "sourceMap": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "outDir": "dist",
-    "rootDir": "src",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    // "allowSyntheticDefaultImports": true, /* This will make some problems in parcel.js. */
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "scripthost",
+      "dom.iterable",
+      "es5",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "esnext"
+    ],
     "strict": true,
-    "strictPropertyInitialization": false
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // "allowSyntheticDefaultImports": true, /* This will make some problems in parcel.js. */
+    "allowSyntheticDefaultImports": false,
+    "sourceMap": true,
+    "removeComments": false
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
