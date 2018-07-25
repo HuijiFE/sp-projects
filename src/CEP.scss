@@ -1,3 +1,10 @@
+$namespace: 'sp' !default;
+$root-font-size: 14 !default;
+
+@function rem($pixel) {
+  @return ($pixel / $root-font-size) * 1rem;
+}
+
 /**
  * CEP
  * The css class naming rule based on component, something like BEM.
@@ -14,9 +21,9 @@
 
 /**
  * Generate root selector for a component/control.
- * 
+ *
  * @include comp('button') {}
- * 
+ *
  * .vd-button {}
  */
 @mixin comp($component) {
@@ -35,11 +42,11 @@
 
 /**
  * Generate selector for elements, support multi elements.
- * 
+ *
  * @include comp('button') {
  *   @include elem('icon') {}
  * }
- * 
+ *
  * .vd-button {
  *   .vd-button_icon {}
  * }
@@ -62,11 +69,11 @@
 
 /**
  * Generate adjacent sibling combinator for elements.
- * 
+ *
  * @include comp('list') {
  *   @include elem-adjacent('item') {}
  * }
- * 
+ *
  * .vd-list {
  *   .vd-list_item + .vd-list_item {}
  * }
@@ -88,11 +95,11 @@
 
 /**
  * Generate general sibling combinator for elements.
- * 
+ *
  * @include comp('list') {
  *   @include elem-general('item') {}
  * }
- * 
+ *
  * .vd-list {
  *   .vd-list_item ~ .vd-list_item {}
  * }
@@ -120,13 +127,13 @@
 
 /**
  * Generate selector for properties of a component/control.
- * 
+ *
  * @include comp('button') {
  *   @include prop(( skin: 'plain', theme: 'dark', )) {}
  * }
- * 
+ *
  * .vd-button.vdp-skin-plain.vdp-theme-dark {}
- * 
+ *
  * NOTE: The prop mixin is only for components, not for elements
  */
 @mixin prop($property-map-list...) {
@@ -152,21 +159,21 @@
 
 /**
  * Generate selector for boolean properties of a component/control.
- * 
+ *
  * @include comp('menu-item') {
  *   @include when('selected') {}
  * }
- * 
+ *
  * .menu-item.is-selected {}
- * 
+ *
  * ----
- * 
+ *
  * @include comp('list') {
  *   @include elem('item') {
  *     @include when('selected', 'raised') {}
  *   }
  * }
- * 
+ *
  * .vd-list {
  *   .vd-list_item.is-selected.is-raised {}
  * }
